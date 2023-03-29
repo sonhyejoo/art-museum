@@ -11,7 +11,7 @@ function GalleryNavigation({ galleries: { records: records } }) {
         {records.map((el) => {
           return (
             <li key={el.id}>
-              <NavLink to={`galleries/${el.gallerynumber}`}>
+              <NavLink to={`/galleries/${el.gallerynumber}`}>
                 {el.name}: {el.theme}
               </NavLink>
             </li>
