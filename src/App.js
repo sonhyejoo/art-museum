@@ -6,12 +6,14 @@ import { Route, Switch, NavLink, Router } from "react-router-dom";
 function App() {
   return (
     <div className="page-wrapper">
+      <GalleryNavigation galleries={harvardArt} />
+
       <Switch>
         <Route exact path="/">
-          <GalleryNavigation galleries={harvardArt} />
+          <h2>Harvard Art Museum</h2>
         </Route>
         <Route path="/galleries/:galleryId">
-          <GalleryView />
+          <GalleryView galleries={harvardArt} />
         </Route>
       </Switch>
     </div>
