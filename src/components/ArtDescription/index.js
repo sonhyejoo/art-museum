@@ -18,6 +18,9 @@ function ArtDescription({ gallery }) {
             </li>
           );
         })}
+        <li>Description: {object1.labeltext}</li>
+        <li>Technique: {object1.technique}</li>
+        <li>Credit: {object1.creditline}</li>
       </ul>
     </div>
   );
